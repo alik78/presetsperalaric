@@ -22,13 +22,7 @@ const PresetGroup = ({ ids }) => {
   return (
     <div className="group">
       Group:
-      {' '}
-      { group?.name }
-      {' '}
-      (
-      { group?.id }
-      )
-      {' '}
+      {` ${group?.name} (${group?.id}) `}
       {
         group.presets?.map(item => item.presets?.length
           ? (

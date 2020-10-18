@@ -32,11 +32,7 @@ const Preset = ({ ids }) => {
       {
         canUpdate && <button type="button" onClick={handleUpdate}>update</button>
       }
-      {' '}
-      (
-      { preset?.id }
-      )
-      {' '}
+      {`(${preset?.id})`}
       <button type="button" onClick={handleDelete}>delete</button>
     </div>
   );
